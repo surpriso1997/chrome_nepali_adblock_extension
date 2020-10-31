@@ -1,0 +1,19 @@
+{
+    "name": "Nepali-Adblock",
+    "version": "0.0.1",
+    "description": "Ad blocker for annoying ads in Nepalse News Portals",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://localhost:3000/*", "https://www.onlinekhabar.com/*"
+            ],
+            "js": [
+                "/filter.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
